@@ -2,10 +2,9 @@ mod components;
 mod pages;
 
 use components::molecules::custom_form::CustomForm;
+use components::molecules::custom_form::Data;
 use gloo::console::log;
 use yew::prelude::*;
-
-use crate::components::molecules::custom_form::Data;
 
 #[function_component(App)]
 pub fn app() -> Html {
