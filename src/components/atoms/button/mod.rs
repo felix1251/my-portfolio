@@ -2,7 +2,7 @@ use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
-    pub children: Children, // the field name `children` is important!
+    pub children: Children,
 }
 
 #[function_component(Button)]
