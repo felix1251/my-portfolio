@@ -6,9 +6,9 @@ use yew::prelude::*;
 pub struct Props {
     pub name: String,
     pub handle_onchange: Callback<String>,
-    #[prop_or("".to_string())]
+    #[prop_or("".to_owned())]
     pub placeholder: String,
-    #[prop_or("".to_string())]
+    #[prop_or("".to_owned())]
     pub label: String,
 }
 

@@ -1,23 +1,17 @@
 mod components;
+mod pages;
 
-use components::atoms::button::Button;
-use components::atoms::input_text::InputText;
+use components::molecules::custom_form::CustomForm;
 use gloo::console::log;
 use yew::prelude::*;
 
+use crate::components::molecules::custom_form::Data;
+
 #[function_component(App)]
 pub fn app() -> Html {
-    let username_onchanged =
-        Callback::from(|username| log!("your usernamne change to: ", username));
+    let form_submit = Callback::from(|data: Data| log!("user username: ", data.username));
 
     html! {
-        <form class="flex flex-col max-w-md gap-2 rounded-sm p-2">
-            <InputText
-                name="username"
-                label="Username"
-                handle_onchange={username_onchanged}
-            />
-            <Button html_type="submit">{"Click me"}</Button>
-        </form>
+        <CustomForm onsubmit={form_submit}/>
     }
 }
