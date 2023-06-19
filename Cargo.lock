@@ -30,6 +30,8 @@ dependencies = [
  "gloo 0.6.1",
  "serde",
  "serde_json",
+ "wasm-bindgen",
+ "web-sys",
  "yew",
 ]
 
