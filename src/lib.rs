@@ -3,24 +3,47 @@
 * yew for UI
 * serde for handling objects
 */
-use gloo::console::log;
-use yew::prelude::*;
-use serde::{Deserialize, Serialize};
 
-#[derive(Serialize, Deserialize)]
-struct  MyObject {
-    username: String
-}
+// use gloo::console::log;
+// use serde::{Deserialize, Serialize};
+mod components;
+use components::atoms::button::Button;
+use yew::prelude::*;
+
+// #[derive(Serialize, Deserialize)]
+// struct  MyObject {
+//     username: String
+// }
 
 #[function_component(App)]
 pub fn app() -> Html {
-    let name="brooks";
-    let my_object = MyObject {
-        username: name.to_owned(),
-    };
+    let class = "sample";
+    let tasks = vec!["record", "play", "buying"];
 
-    log!(serde_json::to_string_pretty(&my_object).unwrap());
     html! {
-        <h1>{"Hello, world!"}</h1>
+        <>
+            <h1 class="text-red-500">{"Hello, world!"}</h1>
+            if class == "app" {
+                <p>{"hi there!"}</p>
+            }else{
+                <p>{"hi there! people"}</p>
+            }
+
+            <ul>
+                {wrap_li(tasks)}
+            </ul>
+
+            <Button>{"Click me"}</Button>
+        </>
     }
+}
+
+fn wrap_li(list: Vec<&str>) -> Vec<Html> {
+    list.iter()
+        .map(|item| {
+            html! {
+                <li>{item}</li>
+            }
+        })
+        .collect()
 }
