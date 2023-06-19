@@ -1,20 +1,9 @@
-/*
-* gloo for debugging
-* yew for UI
-* serde for handling objects
-*/
-
-use gloo::console::log;
-// use serde::{Deserialize, Serialize};
 mod components;
+
 use components::atoms::button::Button;
 use components::atoms::input_text::InputText;
+use gloo::console::log;
 use yew::prelude::*;
-
-// #[derive(Serialize, Deserialize)]
-// struct  MyObject {
-//     username: String
-// }
 
 #[function_component(App)]
 pub fn app() -> Html {
