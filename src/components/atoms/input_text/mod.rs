@@ -25,9 +25,11 @@ pub fn input_text(props: &Props) -> Html {
     });
 
     html! {
-        <div>
+        <div class="space-y-0.5">
             if !props.label.is_empty() {
-                <label>{props.label.clone()}</label>
+                <label class="font-medium">
+                    {props.label.clone()}
+                </label>
             }
             <input
                 class="px-3 py-2 border focus:outline-blue-500 w-full"

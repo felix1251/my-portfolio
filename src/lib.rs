@@ -25,7 +25,7 @@ pub fn app() -> Html {
         <form class="flex flex-col max-w-md gap-2 rounded-sm p-2">
             <InputText
                 name="username"
-                placeholder="Username"
+                label="Username"
                 handle_onchange={username_onchanged}
             />
             <Button html_type="submit">{"Click me"}</Button>
