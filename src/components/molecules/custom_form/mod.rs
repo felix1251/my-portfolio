@@ -1,5 +1,6 @@
 use crate::components::atoms::button::Button;
 use crate::components::atoms::input_text::InputText;
+use crate::User;
 // use gloo::console::log;
 use std::ops::Deref;
 use yew::prelude::*;
@@ -9,6 +10,7 @@ pub struct Data {
     pub username: String,
     pub fullname: String,
 }
+
 #[derive(Properties, PartialEq)]
 pub struct Props {
     pub onsubmit: Callback<Data>,
@@ -17,6 +19,7 @@ pub struct Props {
 #[function_component(CustomForm)]
 pub fn custom_form(props: &Props) -> Html {
     let state = use_state(|| Data::default());
+    let user_context = use_context::<User>();
 
     let cloned_state = state.clone();
     let username_onchanged = Callback::from(move |username| {
@@ -57,6 +60,8 @@ pub fn custom_form(props: &Props) -> Html {
             >
                 {"Click me"}
             </Button>
+            <p>{user_context.clone().unwrap_or_default().username}</p>
+            <p>{user_context.unwrap_or_default().fullname}</p>
         </form>
     }
 }
