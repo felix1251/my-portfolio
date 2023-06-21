@@ -1,14 +1,20 @@
 module.exports = {
-    purge: {
-        mode: "all",
-        content: [
-            "./src/**/*.rs",
-            "./index.html",
-            "./src/**/*.html",
-            "./src/**/*.css",
-        ],
+    darkMode: "class",
+    content: [
+        "./src/**/*.rs",
+        "./index.html",
+        "./src/**/*.html",
+        "./src/**/*.css",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                primary: "#0BB981",
+                secondary: "#31274b",
+                dark: "#1F2937",
+            },
+        },
     },
-    theme: {},
     variants: {},
     plugins: [],
 };
