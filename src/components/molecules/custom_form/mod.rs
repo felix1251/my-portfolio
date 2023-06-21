@@ -9,7 +9,6 @@ pub struct Data {
     pub username: String,
     pub fullname: String,
 }
-
 #[derive(Properties, PartialEq)]
 pub struct Props {
     pub onsubmit: Callback<Data>,
