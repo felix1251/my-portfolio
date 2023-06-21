@@ -1,12 +1,15 @@
 mod components;
 mod pages;
-use std::ops::Deref;
+mod router;
 
+// use gloo::console::log;
 use components::molecules::custom_form::CustomForm;
 use components::molecules::custom_form::Data;
-// use gloo::console::log;
+use router::{switch, Route};
+use std::ops::Deref;
 use yew::prelude::*;
 use yew::ContextProvider;
+use yew_router::prelude::*;
 
 #[derive(PartialEq, Clone, Default)]
 pub struct User {
@@ -30,6 +33,9 @@ pub fn app() -> Html {
     html! {
         <ContextProvider<User> context={user_state.deref().clone()}>
             <CustomForm onsubmit={form_submit}/>
+            <BrowserRouter>
+                <Switch<Route> render={Switch::render(switch)} />
+            </BrowserRouter>
         </ContextProvider<User>>
     }
 }
