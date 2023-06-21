@@ -1,1 +1,2 @@
-mod home;
+pub mod blogs;
+pub mod home;

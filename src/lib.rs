@@ -1,16 +1,16 @@
 mod components;
 mod pages;
+mod router;
 
-use components::molecules::custom_form::CustomForm;
-use components::molecules::custom_form::Data;
-use gloo::console::log;
+use router::{switch, Route};
 use yew::prelude::*;
+use yew_router::prelude::*;
 
 #[function_component(App)]
 pub fn app() -> Html {
-    let form_submit = Callback::from(|data: Data| log!("user username: ", data.username));
-
     html! {
-        <CustomForm onsubmit={form_submit}/>
+        <BrowserRouter>
+            <Switch<Route> render={Switch::render(switch)} />
+        </BrowserRouter>
     }
 }
