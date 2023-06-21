@@ -13,7 +13,7 @@ pub enum Route {
 
 pub fn switch(route: &Route) -> Html {
     match route {
-        Route::Home => html! { <Home/>},
-        Route::Blogs => html! { <Blogs/>},
+        Route::Home => html! { <Home/> },
+        Route::Blogs => html! { <Blogs/> },
     }
 }
