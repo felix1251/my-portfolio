@@ -14,7 +14,7 @@ pub fn button(props: &Props) -> Html {
             class="bg-blue-500 px-3.5 py-2 rounded-sm text-white"
             type={props.html_type.clone()}
         >
-            { for props.children.iter() }
+            { props.children.clone() }
         </button>
     }
 }
