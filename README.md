@@ -8,13 +8,13 @@ Build
 cargo build
 ```
 
-Build tailwind css
+Build tailwindcss
 
 ```
 npx tailwindcss -o ./tailwind.css
 ```
 
-Build and Watch tailwind
+Build and Watch tailwindcss
 
 ```
 npx tailwindcss -o ./tailwind.css --watch
