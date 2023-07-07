@@ -8,7 +8,7 @@ pub fn home() -> Html {
             <h1 class={classes!("text-secondary")}>
                 {"This is Home page"}
             </h1>
-            <p>{"Me felix"}</p>
+            <p class="text-orange-500">{"Me felix"}</p>
         </PrimaryLayout>
     }
 }
