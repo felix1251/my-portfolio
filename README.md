@@ -8,10 +8,16 @@ Build
 cargo build
 ```
 
-Build tailwind css
+Build tailwindcss
 
 ```
-tailwindcss -o ./tailwind.css
+npx tailwindcss -o ./tailwind.css
+```
+
+Build and Watch tailwindcss
+
+```
+npx tailwindcss -o ./tailwind.css --watch
 ```
 
 Run locally
