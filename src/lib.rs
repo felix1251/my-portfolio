@@ -1,8 +1,9 @@
 mod components;
 mod pages;
 mod router;
-use components::templates::primary_layout::PrimaryLayout;
+mod state;
 
+use components::templates::primary_layout::PrimaryLayout;
 use router::{switch, Route};
 use yew::prelude::*;
 use yew_router::prelude::*;

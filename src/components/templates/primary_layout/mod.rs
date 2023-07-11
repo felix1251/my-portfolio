@@ -1,25 +1,11 @@
 use crate::components::organisms::header::Header;
-use serde::{Deserialize, Serialize};
+use crate::state::State;
 use yew::prelude::*;
 use yewdux::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
     pub children: Children,
-}
-
-#[derive(PartialEq, Serialize, Deserialize, Store, Clone)]
-#[store(storage = "local")]
-pub struct State {
-    pub theme: String,
-}
-
-impl Default for State {
-    fn default() -> Self {
-        Self {
-            theme: "light".to_string(),
-        }
-    }
 }
 
 #[function_component(PrimaryLayout)]
@@ -40,7 +26,7 @@ pub fn primary_layout(props: &Props) -> Html {
     });
 
     html! {
-        <div id="__yew" class={classes!(class_name)}>
+        <div id="__yew" class={class_name}>
             <div class="transition-colors duration-200 dark:bg-dark h-screen">
                 <Header/>
                 <main class="mx-auto max-w-[85rem] px-6 md:px-8 py-2 md:py-3">
