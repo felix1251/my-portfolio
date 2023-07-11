@@ -1,25 +1,11 @@
 use crate::components::organisms::header::Header;
-use serde::{Deserialize, Serialize};
+use crate::state::State;
 use yew::prelude::*;
 use yewdux::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
     pub children: Children,
-}
-
-#[derive(PartialEq, Serialize, Deserialize, Store, Clone)]
-#[store(storage = "local")]
-pub struct State {
-    pub theme: String,
-}
-
-impl Default for State {
-    fn default() -> Self {
-        Self {
-            theme: "light".to_string(),
-        }
-    }
 }
 
 #[function_component(PrimaryLayout)]
