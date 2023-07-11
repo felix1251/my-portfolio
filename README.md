@@ -1,6 +1,6 @@
-# rust-blog-site
+# portfolio-ui
 
-**_Blazingly fast blog site_**
+**_Blazingly fast porfolio site_**
 
 Build
 
