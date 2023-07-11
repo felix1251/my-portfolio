@@ -15,12 +15,12 @@ pub fn header_link(props: &Props) -> Html {
     let is_active = if route == props.link {
         classes!("text-primary")
     } else {
-        classes!("text-secondary")
+        classes!("text-secondary", "dark:text-white")
     };
 
     html! {
         <Link<Route>
-            classes={classes!("hidden md:block text-primary".to_owned(), is_active)}
+            classes={classes!("hidden md:block text-primary transition-colors duration-200".to_owned(), is_active)}
             to={props.link.clone()}
         >
             {props.children.clone()}
