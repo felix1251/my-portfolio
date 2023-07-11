@@ -1,3 +1,4 @@
+use crate::components::atoms::header_link::HeaderLink;
 use crate::router::Route;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -14,18 +15,10 @@ pub fn header() -> Html {
                     <span class="text-primary">{".com"}</span>
                 </Link<Route>>
                 <div class="flex gap-6 text-[16px] primary-text-color uppercase font-medium items-center">
-                    <Link<Route> classes="hidden md:block cursor-pointer text-primary" to={Route::Home}>
-                       {"Porfolio"}
-                    </Link<Route>>
-                    <Link<Route> classes="hidden md:block cursor-pointer text-secondary" to={Route::Blogs}>
-                       {"Projects"}
-                    </Link<Route>>
-                    <Link<Route> classes="hidden md:block cursor-pointer text-secondary" to={Route::Home}>
-                       {"Blogs"}
-                    </Link<Route>>
-                    <Link<Route> classes="hidden md:block cursor-pointer text-secondary" to={Route::Home}>
-                       {"About"}
-                    </Link<Route>>
+                    <HeaderLink link={Route::Home}>{"Porfolio"}</HeaderLink>
+                    <HeaderLink link={Route::Projects}>{"Projects"}</HeaderLink>
+                    <HeaderLink link={Route::Blogs}>{"Blogs"}</HeaderLink>
+                    <HeaderLink link={Route::About}>{"About"}</HeaderLink>
                 </div>
             </div>
         </header>
