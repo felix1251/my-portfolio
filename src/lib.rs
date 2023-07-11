@@ -1,6 +1,7 @@
 mod components;
 mod pages;
 mod router;
+use components::templates::primary_layout::PrimaryLayout;
 
 use router::{switch, Route};
 use yew::prelude::*;
@@ -10,7 +11,9 @@ use yew_router::prelude::*;
 pub fn app() -> Html {
     html! {
         <BrowserRouter>
-            <Switch<Route> render={switch} />
+            <PrimaryLayout>
+                <Switch<Route> render={switch} />
+            </PrimaryLayout>
         </BrowserRouter>
     }
 }
