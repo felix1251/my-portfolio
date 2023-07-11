@@ -71,20 +71,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "blog_app"
-version = "0.1.0"
-dependencies = [
- "gloo",
- "serde",
- "serde_json",
- "wasm-bindgen",
- "web-sys",
- "yew",
- "yew-router",
- "yewdux",
-]
-
-[[package]]
 name = "boolinator"
 version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -588,6 +574,20 @@ dependencies = [
  "futures",
  "rustversion",
  "thiserror",
+]
+
+[[package]]
+name = "portfolio"
+version = "0.1.0"
+dependencies = [
+ "gloo",
+ "serde",
+ "serde_json",
+ "wasm-bindgen",
+ "web-sys",
+ "yew",
+ "yew-router",
+ "yewdux",
 ]
 
 [[package]]
