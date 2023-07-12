@@ -12,10 +12,10 @@ pub struct Props {
 pub fn primary_layout(props: &Props) -> Html {
     let (state, _) = use_store::<State>();
     let theme = state.theme.clone();
-    let class_name = classes!(theme);
+    let theme_class = classes!(theme);
 
     html! {
-        <div id="__yew" class={class_name}>
+        <div id="__yew" class={theme_class}>
             <div class="transition-colors duration-200 dark:bg-dark h-screen">
                 <Header/>
                 <main class="mx-auto max-w-[85rem] px-6 md:px-8 py-2 md:py-3">
