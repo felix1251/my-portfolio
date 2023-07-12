@@ -22,11 +22,11 @@ pub fn theme_switcher() -> Html {
         <button {onclick} class="w-10 rounded-full overflow-hidden p-0.5 bg-primary">
             <div class="relative w-5 h-5 flex justify-center items-center rounded-full bg-white dark:bg-dark transition-margin duration-200 ml-0 dark:ml-4">
                 <Icon
-                    class="absolute w-3.5 h-3.5 text-secondary dark:text-white transition-opacity duration-200 opacity-100 dark:opacity-0"
+                    class="absolute w-3.5 h-3.5 text-secondary dark:text-white transition-opacity duration-200 opacity-0 dark:opacity-100"
                     icon_id={IconId::FontAwesomeSolidSun}
                 />
                 <Icon
-                    class="absolute w-3.5 h-3.5 text-secondary dark:text-white transition-opacity duration-200 opacity-0 dark:opacity-100"
+                    class="absolute w-3.5 h-3.5 text-secondary dark:text-white transition-opacity duration-200 opacity-100 dark:opacity-0"
                     icon_id={IconId::BootstrapMoonFill}
                 />
             </div>
