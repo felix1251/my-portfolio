@@ -1,4 +1,5 @@
 use crate::components::atoms::header_link::HeaderLink;
+use crate::components::atoms::theme_switcher::ThemeSwitcher;
 use crate::router::Route;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -17,6 +18,7 @@ pub fn header() -> Html {
                     <HeaderLink link={Route::Projects}>{"Projects"}</HeaderLink>
                     <HeaderLink link={Route::Blogs}>{"Blogs"}</HeaderLink>
                     <HeaderLink link={Route::About}>{"About"}</HeaderLink>
+                    <ThemeSwitcher/>
                 </div>
             </div>
         </header>
