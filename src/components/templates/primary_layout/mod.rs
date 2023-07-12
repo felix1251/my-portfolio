@@ -1,3 +1,4 @@
+use crate::components::organisms::footer::Footer;
 use crate::components::organisms::header::Header;
 use crate::state::State;
 use yew::prelude::*;
@@ -15,11 +16,12 @@ pub fn primary_layout(props: &Props) -> Html {
 
     html! {
         <div id="__yew" class={theme_class}>
-            <div class="transition-colors duration-200 dark:bg-dark h-screen">
+            <div class="transition-colors duration-200 dark:bg-dark h-screen flex flex-col">
                 <Header/>
-                <main class="mx-auto max-w-[85rem] px-6 md:px-8 py-2 md:py-3">
+                <main class="flex-1 w-full mx-auto max-w-[85rem] px-6 md:px-8 py-2 md:py-3">
                     { props.children.clone() }
                 </main>
+                <Footer/>
             </div>
         </div>
     }
