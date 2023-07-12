@@ -13,8 +13,8 @@ pub fn header() -> Html {
                     {"felixabacajen"}
                     <span class="text-primary">{".com"}</span>
                 </Link<Route>>
-                <div class="flex gap-6 text-[16px] primary-text-color uppercase font-medium items-center">
-                    <HeaderLink link={Route::Home}>{"Porfolio"}</HeaderLink>
+                <div class="flex gap-6 text-[16px] primary-text-color font-medium items-center">
+                    <HeaderLink link={Route::Home}>{"Home"}</HeaderLink>
                     <HeaderLink link={Route::Projects}>{"Projects"}</HeaderLink>
                     <HeaderLink link={Route::Blogs}>{"Blogs"}</HeaderLink>
                     <HeaderLink link={Route::About}>{"About"}</HeaderLink>
