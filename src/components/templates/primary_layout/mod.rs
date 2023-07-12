@@ -11,8 +11,7 @@ pub struct Props {
 #[function_component(PrimaryLayout)]
 pub fn primary_layout(props: &Props) -> Html {
     let (state, _) = use_store::<State>();
-    let theme = state.theme.clone();
-    let theme_class = classes!(theme);
+    let theme_class = classes!(state.theme.clone());
 
     html! {
         <div id="__yew" class={theme_class}>
