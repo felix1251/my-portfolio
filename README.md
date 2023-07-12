@@ -8,7 +8,7 @@ Install WebAssembly target
 rustup target add wasm32-unknown-unknown
 ```
 
-Build
+Build Yew
 
 ```rust
 cargo build
