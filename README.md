@@ -5,7 +5,7 @@
 Install WebAssembly target
 
 ```rust
-    rustup target add wasm32-unknown-unknown
+rustup target add wasm32-unknown-unknown
 ```
 
 Build
