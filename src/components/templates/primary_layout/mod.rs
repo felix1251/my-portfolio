@@ -16,9 +16,9 @@ pub fn primary_layout(props: &Props) -> Html {
 
     html! {
         <div id="__yew" class={theme_class}>
-            <div class="transition-colors duration-200 dark:bg-dark h-screen flex flex-col">
+            <div class="transition-colors duration-200 dark:bg-dark h-screen overflow-auto flex flex-col">
                 <Header/>
-                <main class="flex-1 w-full mx-auto max-w-[85rem] px-6 md:px-8 py-2 md:py-3">
+                <main class="flex-1 w-full">
                     { props.children.clone() }
                 </main>
                 <Footer/>

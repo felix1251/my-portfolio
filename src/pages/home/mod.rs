@@ -1,13 +1,19 @@
+use crate::components::molecules::home_main_section::HomeMainSection;
+use crate::constants::PROJECTS;
 use yew::prelude::*;
 
 #[function_component(Home)]
 pub fn home() -> Html {
     html! {
         <>
-            <h1 class={classes!("text-secondary")}>
-                {"This is home page"}
-            </h1>
-            <p class="text-orange-500">{"Me felix"}</p>
+            <HomeMainSection/>
+            {
+                PROJECTS.into_iter().map(|project| {
+                    html!{
+                        <div>{ format!("Hello, I'am {}!", project.title) }</div>
+                    }
+                }).collect::<Html>()
+            }
         </>
     }
 }
