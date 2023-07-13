@@ -18,5 +18,6 @@ yew_icons = { version = "0.7", features = [
     "BootstrapSunFill",
     "BootstrapMoonFill",
     "FontAwesomeSolidSun",
-    "BootstrapGithub"
+    "BootstrapGithub",
+    "FontAwesomeSolidArrowRight"
 ] }

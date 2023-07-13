@@ -1,5 +1,6 @@
 use yew::prelude::*;
 // use yew_router::prelude::*;
+use yew_icons::{Icon, IconId};
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
@@ -21,10 +22,14 @@ pub fn section_header(props: &Props) -> Html {
                     {props.highlight.clone()}
                 </h2>
             </div>
-            <a class="text-gray-400 hover:text-main lg:basis-2/4 flex justify-end items-center space-x-1 cursor-pointer">
+            <a class="text-tertiary hover:text-primary lg:basis-2/4 flex justify-end items-center space-x-1.5 cursor-pointer">
                 <span class="text-xs uppercase font-semibold">
                     {props.go_to_text.clone()}
                 </span>
+                <Icon
+                    class="w-3 h-3"
+                    icon_id={IconId::FontAwesomeSolidArrowRight}
+                />
             </a>
         </div>
     }
