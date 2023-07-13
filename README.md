@@ -2,7 +2,7 @@
 
 **_Blazingly fast porfolio site_**
 
-## CSR
+## CSR (Client Side Rendering)
 
 Install WebAssembly target
 
@@ -34,7 +34,7 @@ Run locally
 trunk serve
 ```
 
-## SSR
+## SSR (Server Side Rendering)
 
 Install cargo watcher
 
