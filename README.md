@@ -1,8 +1,10 @@
-# portfolio-ui
+# PORTFOLIO UI
 
 **_Blazingly fast porfolio site_**
 
 ## CSR (Client Side Rendering)
+
+_Navigate to csr folder_
 
 Install WebAssembly target
 
@@ -35,6 +37,8 @@ trunk serve
 ```
 
 ## SSR (Server Side Rendering)
+
+_Navigate to ssr folder_
 
 Install cargo watcher
 
