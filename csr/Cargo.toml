@@ -14,4 +14,10 @@ serde_json = "1.0.79"
 wasm-bindgen = "0.2.79"
 web-sys = { version= "0.3.56", features = ["HtmlInputElement"] }
 yew-router = "0.17.0"
-yew_icons = { version = "0.7", features = ["BootstrapSunFill", "BootstrapMoonFill", "FontAwesomeSolidSun", "BootstrapGithub"] }
+yew_icons = { version = "0.7", features = [
+    "BootstrapSunFill",
+    "BootstrapMoonFill",
+    "FontAwesomeSolidSun",
+    "BootstrapGithub",
+    "FontAwesomeSolidArrowRight"
+] }

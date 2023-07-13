@@ -16,7 +16,7 @@ pub fn home_main_section() -> Html {
                     </p>
                 </div>
             </div>
-            <div class="col-span-2 hidden md:block bg-tertiary"></div>
+            <div class="col-span-2 hidden md:block"></div>
         </section>
     }
 }
