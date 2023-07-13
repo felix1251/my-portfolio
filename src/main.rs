@@ -1,5 +1,5 @@
 use client::App;
 
 fn main() {
-    yew::Renderer::<App>::new().hydrate();
+    yew::Renderer::<App>::new().render();
 }
