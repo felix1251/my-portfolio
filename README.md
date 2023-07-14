@@ -1,6 +1,7 @@
 # PORTFOLIO UI
 
 **_Blazingly fast porfolio site_**
+[Install Rust in your machine](https://www.rust-lang.org/tools/install)
 
 Install WebAssembly target
 
