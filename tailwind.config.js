@@ -14,6 +14,7 @@ module.exports = {
                 tertiary: "#AAAAAA",
                 quaternary: "#f6f7f8",
                 dark: "#1F2937",
+                "dark-2": "#374151",
             },
         },
     },

@@ -9,10 +9,10 @@ pub struct Props {
 #[function_component(ProjectCard)]
 pub fn project_card(props: &Props) -> Html {
     html! {
-        <div class="p-6 rounded-2xl bg-quaternary">
-            <div class="h-[200px] w-full bg-white relative overflow-hidden mb-3 rounded-xl">
+        <div class="p-6 rounded-2xl bg-quaternary dark:bg-dark-2">
+            <div class="h-[200px] w-full duration-200 bg-white dark:bg-dark relative overflow-hidden mb-3 rounded-xl">
             </div>
-            <div class="font-semibold text-xl mb-2">
+            <div class="font-semibold text-lg mb-2 transition-colors duration-200 text-black dark:text-white">
                 { props.title.clone() }
             </div>
             <div class="text-md text-tertiary">
