@@ -8,7 +8,7 @@ pub fn home_main_section() -> Html {
                 <div class="max-w-[600px] md:mr-14 space-y-5">
                     <h1 class="leading-none font-medium text-[45px] sm:text-[55px] transition-colors duration-200 text-secondary dark:text-white">
                         {"I'm a "}
-                        <span class="text-primary">{"Fullstack Developer"}</span>
+                        <span class="text-primary">{"Software Engineer"}</span>
                         {" designing and building products."}
                     </h1>
                     <p class="text-tertiary font-medium">
