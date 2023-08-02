@@ -1,24 +1,24 @@
 #[derive(Copy, Clone, Debug, Eq, PartialEq)]
 pub struct Project {
     pub title: &'static str,
-    pub description: &'static str,
+    pub context: &'static str,
 }
 
 pub const PROJECTS: &'static [Project] = &[
     Project {
         title: "Gotextbooks Wholesale",
-        description: "sample",
+        context: "sample",
     },
     Project {
         title: "BXI Inventory System",
-        description: "sample",
+        context: "sample",
     },
     Project {
         title: "Kandori",
-        description: "sample",
+        context: "sample",
     },
     Project {
         title: "Lixtagram Social",
-        description: "sample",
+        context: "sample",
     },
 ];
