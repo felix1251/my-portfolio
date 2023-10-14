@@ -2,5 +2,4 @@ target
 dist
 tailwind.css
 node_modules
-Cargo.lock
 .DS_Store
