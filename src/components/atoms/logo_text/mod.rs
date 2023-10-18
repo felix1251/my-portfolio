@@ -7,8 +7,7 @@ pub fn logo_text() -> Html {
     html! {
        <Link<Route>
             to={Route::Home}
-            classes={classes!("font-medium", "text-[18px]", "text-secondary",
-            "dark:text-white", "transition-colors", "duration-200")}
+            classes={classes!("font-medium", "text-[18px]", "text-white", "transition-colors", "duration-200")}
         >
             {"felixabacajen"}
             <span class="text-primary">{".com"}</span>

@@ -18,7 +18,7 @@ pub fn section_header(props: &Props) -> Html {
                 <span class="text-xs uppercase text-primary font-semibold mb-2 block">
                     {props.title.clone()}
                 </span>
-                <h2 class="text-4xl font-medium transition-colors duration-200 text-secondary dark:text-white">
+                <h2 class="text-4xl font-medium transition-colors duration-200 text-white dark:text-white">
                     {props.highlight.clone()}
                 </h2>
             </div>

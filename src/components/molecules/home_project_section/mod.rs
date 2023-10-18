@@ -1,5 +1,5 @@
+use crate::components::atoms::card::Card;
 use crate::components::atoms::section_header::SectionHeader;
-use crate::components::atoms::project_card::ProjectCard;
 use crate::constants::PROJECTS;
 use yew::prelude::*;
 
@@ -17,7 +17,7 @@ pub fn home_project_section() -> Html {
                 {
                     PROJECTS.into_iter().take(8).map(|project| {
                         html!{
-                            <ProjectCard
+                            <Card
                                 title={project.title}
                                 context={project.context}
                             />
