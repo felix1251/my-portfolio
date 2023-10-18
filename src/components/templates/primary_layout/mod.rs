@@ -10,12 +10,12 @@ pub struct Props {
 #[function_component(PrimaryLayout)]
 pub fn primary_layout(props: &Props) -> Html {
     html! {
-        <div class="transition-colors duration-200 dark:bg-dark h-screen overflow-auto flex flex-col">
+        <>
             <Header/>
-            <main class="flex-1 w-full">
+            <main>
                 { props.children.clone() }
             </main>
             <Footer/>
-        </div>
+        </>
     }
 }

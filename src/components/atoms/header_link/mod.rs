@@ -15,7 +15,7 @@ pub fn header_link(props: &Props) -> Html {
     let is_active = if route == props.link {
         classes!("text-primary")
     } else {
-        classes!("text-secondary", "dark:text-white")
+        classes!("text-white")
     };
 
     html! {

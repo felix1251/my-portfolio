@@ -6,7 +6,7 @@ pub fn home_main_section() -> Html {
         <section class="mx-auto max-w-[85rem] px-6 md:px-8 grid grid-cols-1 md:grid-cols-5 h-[700px] overflow-hidden">
             <div class="md:col-span-3 flex items-center">
                 <div class="max-w-[600px] md:mr-14 space-y-5">
-                    <h1 class="leading-none font-medium text-[45px] sm:text-[55px] transition-colors duration-200 text-secondary dark:text-white">
+                    <h1 class="leading-none font-medium text-[45px] sm:text-[55px] transition-colors duration-200 text-white">
                         {"I'm a "}
                         <span class="text-primary">{"Software Engineer"}</span>
                         {" designing and building products."}

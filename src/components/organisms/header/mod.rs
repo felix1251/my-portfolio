@@ -6,7 +6,7 @@ use yew::prelude::*;
 #[function_component(Header)]
 pub fn header() -> Html {
     html! {
-        <header class="w-full border-b transition-colors dark:border-dark-2 duration-200">
+        <header class="w-full border-b border-dark-2">
             <div class="mx-auto max-w-[85rem] px-6 md:px-8 flex h-[5rem] items-center justify-between">
                 <LogoText />
                 <div class="flex gap-6 text-[16px] primary-text-color font-medium items-center">
