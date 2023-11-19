@@ -10,6 +10,12 @@ Install WebAssembly target
 rustup target add wasm32-unknown-unknown
 ```
 
+Install Trunk to run local
+
+```
+cargo install trunk wasm-bindgen-cli
+```
+
 Build Yew
 
 ```rust

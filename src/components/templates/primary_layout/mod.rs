@@ -4,18 +4,18 @@ use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
-    pub children: Children,
+  pub children: Children,
 }
 
 #[function_component(PrimaryLayout)]
 pub fn primary_layout(props: &Props) -> Html {
-    html! {
-        <>
-            <Header/>
-            <main>
-                { props.children.clone() }
-            </main>
-            <Footer/>
-        </>
-    }
+  html! {
+    <>
+      <Header/>
+      <main class="mx-auto max-w-4xl px-6 md:px-8 py-5">
+        { props.children.clone() }
+      </main>
+      <Footer/>
+    </>
+  }
 }
