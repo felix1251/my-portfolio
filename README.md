@@ -1,4 +1,4 @@
-# PORTFOLIO UI
+# PORTFOLIO
 
 **_Blazingly fast porfolio site_**
 
