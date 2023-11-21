@@ -20,14 +20,14 @@ pub fn home() -> Html {
             <div class="flex gap-3">
               <Icon
                 class="text-tertiary hover:text-primary"
-                width={"1.7em".to_owned()}
-                height={"1.7em".to_owned()}
+                width={"1.6em".to_owned()}
+                height={"1.6em".to_owned()}
                 icon_id={IconId::BootstrapLinkedin}
               />
               <Icon
                 class="text-tertiary hover:text-primary"
-                width={"1.7em".to_owned()}
-                height={"1.7em".to_owned()}
+                width={"1.6em".to_owned()}
+                height={"1.6em".to_owned()}
                 icon_id={IconId::BootstrapGithub}
               />
             </div>
