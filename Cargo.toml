@@ -19,7 +19,8 @@ yew_icons = { version = "0.7", features = [
     "BootstrapMoonFill",
     "FontAwesomeSolidSun",
     "BootstrapGithub",
-    "FontAwesomeSolidArrowRight"
+    "FontAwesomeSolidArrowRight",
+    "BootstrapLinkedin"
 ] }
 validator = { version = "0.16.1", features = ["derive"] }
 # implicit-clone = { version = "0.3.5"}
