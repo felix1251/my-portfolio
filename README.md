@@ -18,24 +18,24 @@ cargo install trunk wasm-bindgen-cli
 
 Build Yew
 
-```rust
+```
 cargo build
 ```
 
 Build tailwindcss
 
-```rust
+```
 npx tailwindcss -o ./tailwind.css
 ```
 
 Build and Watch tailwindcss
 
-```rust
+```
 npx tailwindcss -o ./tailwind.css --watch
 ```
 
 Run locally
 
-```rust
+```
 trunk serve
 ```
