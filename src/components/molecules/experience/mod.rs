@@ -40,7 +40,7 @@ pub fn experience() -> Html {
           company={"iRipple, Inc. · Full-time"}
           duration={"Nov 2021 - Dec 2022 · 1 yr 2 mos"}
           location={"Pasig, National Capital Region, Philippines · Remote"}
-          img={"irriple_logo.jpeg"}
+          img={"irriple_logo.jpeg "}
         />
       </div>
     </div>
