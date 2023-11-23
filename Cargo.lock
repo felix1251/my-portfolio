@@ -625,7 +625,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "portable"
+name = "portfolio"
 version = "0.1.0"
 dependencies = [
  "gloo 0.9.0",
