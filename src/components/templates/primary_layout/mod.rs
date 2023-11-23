@@ -1,5 +1,4 @@
 use crate::components::organisms::footer::Footer;
-use crate::components::organisms::header::Header;
 use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
