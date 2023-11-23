@@ -6,8 +6,8 @@ pub fn profile() -> Html {
   html! {
    <div class="rounded-xl bg-dark-2 w-full drop-shadow-sm border border-dark-2">
       <div class="h-52 w-full bg-cover bg-center rounded-t-xl" style="background-image: url('assets/img/cover.jpeg');"></div>
-      <div class="px-6 py-4">
-        <img class="ring-[5px] ring-dark-2 bg-tertiary -mt-28 w-44 h-44 rounded-full" src="assets/img/profile.jpeg" alt="cover"/>
+      <div class="p-6">
+        <img class="ring-[5px] ring-dark-2 bg-tertiary -mt-28 w-44 h-44 rounded-full" src="assets/img/profile.jpeg" alt="profile"/>
         <div class="flex gap-1.5 items-center mt-2">
           <h1 class="text-[1.68rem]">{"Felix Abacajen"}</h1>
           <div class="text-[15px] text-tertiary">{"(He/Him)"}</div>
