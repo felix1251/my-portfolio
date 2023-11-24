@@ -20,18 +20,22 @@ pub fn profile() -> Html {
             <p class="text-tertiary text-[15px]">{"Kitcharao, Caraga, Philippines"}</p>
           </div>
           <div class="flex gap-3">
-            <Icon
-              class="text-tertiary hover:text-primary"
-              width={"1.5em".to_owned()}
-              height={"1.5em".to_owned()}
-              icon_id={IconId::BootstrapGithub}
-            />
-            <Icon
-              class="text-tertiary hover:text-primary"
-              width={"1.5em".to_owned()}
-              height={"1.5em".to_owned()}
-              icon_id={IconId::BootstrapLinkedin}
-            />
+            <a  href="https://github.com/felix1251/" target="_blank">
+              <Icon
+                class="text-tertiary hover:text-primary"
+                width={"1.5em".to_owned()}
+                height={"1.5em".to_owned()}
+                icon_id={IconId::BootstrapGithub}
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/fabacajen" target="_blank">
+              <Icon
+                class="text-tertiary hover:text-primary"
+                width={"1.5em".to_owned()}
+                height={"1.5em".to_owned()}
+                icon_id={IconId::BootstrapLinkedin}
+              />
+            </a>
           </div>
         </div>
       </div>
