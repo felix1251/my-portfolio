@@ -1,4 +1,5 @@
 use crate::components::molecules::about::About;
+use crate::components::molecules::education::Education;
 use crate::components::molecules::experience::Experience;
 use crate::components::molecules::profile::Profile;
 use yew::prelude::*;
@@ -10,6 +11,7 @@ pub fn home() -> Html {
       <Profile/>
       <About/>
       <Experience/>
+      <Education/>
     </div>
   }
 }
