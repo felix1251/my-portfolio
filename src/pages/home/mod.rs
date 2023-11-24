@@ -7,7 +7,7 @@ use yew::prelude::*;
 #[function_component(Home)]
 pub fn home() -> Html {
   html! {
-    <div class="space-y-5">
+    <div class="space-y-3.5">
       <Profile/>
       <About/>
       <Experience/>
