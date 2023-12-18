@@ -25,13 +25,13 @@ cargo build
 Build tailwindcss
 
 ```
-npx tailwindcss -o ./tailwind.css
+npx tailwindcss -i ./main.css -o ./tailwind.css --minify
 ```
 
 Build and Watch tailwindcss
 
 ```
-npx tailwindcss -o ./tailwind.css --watch
+npx tailwindcss -i ./main.css -o ./tailwind.css --watch
 ```
 
 Run locally
