@@ -16,13 +16,6 @@ pub fn experience() -> Html {
         />
         <XpCard
           role={"Full Stack Developer"}
-          company={"Black Ink Tech · Full-time"}
-          duration={"Aug 2023 - Nov 2023 · 4 mos"}
-          location={"South Carolina, United States · Remote"}
-          img={"bit_logo.jpeg"}
-        />
-        <XpCard
-          role={"Full Stack Developer"}
           company={"Montani International Inc. · Full-time"}
           duration={"Jun 2023 - Aug 2023 · 3 mos"}
           location={"Makati, National Capital Region, Philippines · Remote"}
