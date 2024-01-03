@@ -39,3 +39,17 @@ Run locally
 ```
 trunk serve
 ```
+
+## Docker
+
+Build
+
+```
+docker build -t portfolio .
+```
+
+Run
+
+```
+docker run -d -p 8080:8080 --name portfolio-container portfolio
+```
