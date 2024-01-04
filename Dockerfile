@@ -13,6 +13,6 @@ RUN cd /tmp && tar xf trunk-x86_64-unknown-linux-gnu.tar.gz && chmod +x trunk &&
 WORKDIR /app
 COPY . .
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD [ "trunk", "serve" ]
