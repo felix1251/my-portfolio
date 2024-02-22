@@ -1,0 +1,19 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "**_Blazingly fast porfolio site_**",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "twrun": "npx tailwindcss -i ./global.css -o ./assets/css/tailwind.css --watch",
+    "twbuild": "npx tailwindcss -i ./global.css -o ./assets/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^3.4.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

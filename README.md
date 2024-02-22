@@ -1,57 +1,36 @@
 # PORTFOLIO
 
-<!-- [felixabacajen.info](https://felixabacajen.info/) -->
-
 **_Blazingly fast porfolio site_**
 
-[Install Rust in your machine](https://www.rust-lang.org/tools/install)
 
-Install WebAssembly target
-
-```rust
-rustup target add wasm32-unknown-unknown
-```
-
-Install Trunk to run local
+Setup Env
 
 ```
-cargo install trunk wasm-bindgen-cli
+cp .env.dev .env
 ```
 
-Build Yew
+Build Project
 
 ```
 cargo build
 ```
 
-Build tailwindcss
+Run Project
 
 ```
-npx tailwindcss -i ./main.css -o ./tailwind.css --minify
+cargo watch -x run
 ```
 
-Build and Watch tailwindcss
+### Tailwind
+
+Install Node dependencies
 
 ```
-npx tailwindcss -i ./main.css -o ./tailwind.css --watch
+yarn
 ```
 
-Run locally
+Run and watch Tailwind
 
 ```
-trunk serve
-```
-
-## Docker
-
-Build
-
-```
-docker build -t portfolio .
-```
-
-Run
-
-```
-docker run -d -p 8080:8080 --name portfolio-container portfolio
+yarn twrun
 ```
