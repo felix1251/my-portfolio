@@ -6,7 +6,7 @@
 Setup Env
 
 ```
-cp .env.dev .env
+cp .env.sample .env
 ```
 
 Build Project
