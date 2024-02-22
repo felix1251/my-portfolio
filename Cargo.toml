@@ -18,7 +18,7 @@ tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 ## Date & time
-chrono = "0.4.23"
+# chrono = "0.4.23"
 
 ## Struct/Extractor validator
 validator = { version = "0.16.0", features = ["derive"] }
@@ -30,7 +30,7 @@ uuid = { version = "1.4.1", features = ["v4"] }
 dotenvy = "0.15.6"
 
 # ORM
-sea-orm = { version = "0.12.7", features = ["sqlx-postgres", "runtime-tokio-rustls"] }
+# sea-orm = { version = "0.12.7", features = ["sqlx-postgres", "runtime-tokio-rustls"] }
 
 # Templating
 askama = { version = "0.12.1", features = ["with-axum"] }
