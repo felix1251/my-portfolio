@@ -1,10 +1,4 @@
-// mod database;
-// mod routes;
-
-// use axum;
-// use tokio;
-use tracing;
-use tracing_subscriber;
+mod routes;
 
 pub async fn run() {
   tracing_subscriber::fmt()
@@ -12,13 +6,13 @@ pub async fn run() {
     .init();
 
   // routes
-  // let services = routes::create_routes().await;
+  let services = routes::create_routes();
 
-  // let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
-  // let local_address = listener.local_addr().unwrap();
+  let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
+  let local_address = listener.local_addr().unwrap();
 
-  // tracing::debug!("listening on http://{}", local_address);
+  tracing::debug!("listening on http://{}", local_address);
 
-  // // run our app with hyper, listening globally on port 3000
-  // axum::serve(listener, services).await.unwrap();
+  // run our app with hyper, listening globally on port 3000
+  axum::serve(listener, services).await.unwrap();
 }

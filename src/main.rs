@@ -1,3 +1,6 @@
-// use portfolio::run;
+use portfolio::run;
 
-fn main() {}
+#[tokio::main]
+async fn main() {
+  run().await
+}
