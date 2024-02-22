@@ -1,5 +1,3 @@
-use portfolio::App;
+// use portfolio::run;
 
-fn main() {
-  yew::Renderer::<App>::new().render();
-}
+fn main() {}

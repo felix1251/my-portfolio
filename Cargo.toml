@@ -6,17 +6,32 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-yew = { version = "0.21", features = ["csr"] }
-# yewdux = "0.9"
-gloo = "0.9.0"
-serde = "1.0.136"
-serde_json = "1.0.79"
-wasm-bindgen = "0.2.79"
-web-sys = { version= "0.3.56", features = ["HtmlInputElement"] }
-yew-router = "0.18.0"
-yew_icons = { version = "0.8.0", features = [
-    "BootstrapGithub",
-    "BootstrapLinkedin"
-] }
-validator = { version = "0.16.1", features = ["derive"] }
-# implicit-clone = { version = "0.3.5"}
+# Framework
+axum = { version = "0.7.0", features = ["macros"] }
+
+## Tokio & Tower
+tokio = { version = "1.34.0", features = ["macros", "rt-multi-thread"] }
+tower-http = { version = "0.5.0", features = ["trace", "cors", "fs"] }
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+## Date & time
+chrono = "0.4.23"
+
+## Struct/Extractor validator
+validator = { version = "0.16.0", features = ["derive"] }
+
+# Uuid v4
+uuid = { version = "1.4.1", features = ["v4"] }
+
+# ENV Variables
+dotenvy = "0.15.6"
+
+# ORM
+sea-orm = { version = "0.12.7", features = ["sqlx-postgres", "runtime-tokio-rustls"] }
+
+# Templating
+askama = { version = "0.12.1", features = ["with-axum"] }
+askama_axum = "0.4.0"
