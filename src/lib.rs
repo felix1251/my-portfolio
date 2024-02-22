@@ -6,17 +6,13 @@
 use tracing;
 use tracing_subscriber;
 
-pub async fn run(_db_uri: String) {
+pub async fn run() {
   tracing_subscriber::fmt()
     .with_max_level(tracing::Level::DEBUG)
     .init();
 
-  // tracing::debug!("Connecting to DB");
-  // let db = database::init(db_uri).await;
-  // tracing::debug!("DB Connected");
-
   // routes
-  // let services = routes::create_routes(db).await;
+  // let services = routes::create_routes().await;
 
   // let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
   // let local_address = listener.local_addr().unwrap();
