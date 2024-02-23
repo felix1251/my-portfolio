@@ -1,0 +1,2 @@
+client: cargo watch -x
+css: yarn twrun

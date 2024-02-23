@@ -35,3 +35,19 @@ Run Project
 ```
 cargo watch -x run
 ```
+
+### Run with procfile
+
+Install Ultraman (using brew)
+[Ultraman Docs](https://github.com/yukihirop/ultraman)
+
+```
+brew tap yukihirop/homebrew-tap
+brew install ultraman
+```
+
+Run cargo with tailwind at the same time
+
+```
+bash rundev
+```

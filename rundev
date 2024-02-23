@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exec ultraman start -f Procfile.dev
